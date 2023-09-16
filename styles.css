@@ -1,0 +1,224 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.selection{
+    color: aliceblue;
+    background-color: rgb(37, 37, 109);
+    transition: 0.8s;
+}
+
+.burger-selection{
+    background-color: rgb(255, 255, 255);
+    transition: 0.8s;
+}
+
+/* HEADER *************************************************************************************/
+
+header{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+
+header .container{
+    position: relative;
+    width: 1680px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container a{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(37, 37, 109);
+}
+
+/* Menu */
+
+#burger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15px;
+    padding: 27.5px 10px;
+    /*border: 1px solid;*/
+}
+
+#burger-icon span{
+    width: 20px;
+    height: 3px;
+    border-radius: 3px;
+}
+
+.line-burger{
+    background-color: rgb(37, 37, 109);
+}
+
+#menu{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*border: 1px solid;*/
+}
+
+#title-menu{
+    display:flex;
+    align-items: center;
+    padding: 0px 10px;
+    height: 70px;
+    font-size: 1.2rem;
+}
+
+#menu nav{
+    position: absolute;
+    top: 70px;
+    width: 220px;
+    height: auto;
+    background-color:aliceblue;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+}
+
+#menu nav ul li a{
+    display: block;
+    padding: 12px 16px;
+}
+
+#menu:hover nav{
+    display: block;
+}
+
+#menu nav ul li:hover a{
+    display: flex;
+    color: aliceblue;
+    background-color: rgb(37, 37, 109);
+}
+
+/* Society */
+
+#society{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    /*border: 1px solid;*/
+}
+
+#society img{
+height: 70px;
+}
+
+#society a span{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 0 10px;
+    font-family: 'Alex Brush', cursive;
+    font-size: 2.5rem;
+}
+
+/* Activities */
+
+#activities{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*border: 1px solid;*/
+}
+
+#activities a span{
+    height: 70px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+/* MAIN-IMAGE *********************************************************************************/
+
+/* CONSULTATION *******************************************************************************/
+
+/* PROPOSITION ********************************************************************************/
+
+/* CONTACT ************************************************************************************/
+
+/* FOOTER *************************************************************************************/
+
+/* 1024px MAX SCREEN **************************************************************************/
+
+/* Header */
+
+@media (max-width: 1024px) {
+
+
+
+    #activities a:nth-child(2){
+        display: none;
+    }
+
+    #activities{
+        width: 170px;
+        justify-content: right;
+    }
+}
+
+/* 720px MAX SCREEN **************************************************************************/
+
+/* Header */
+
+@media (max-width: 720px) {
+    #menu a:nth-child(2){
+        display: none;
+    }
+
+    #society a span{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #society img{
+        height: 50px;
+        padding: 10px 10px;
+    }
+
+    header .container a{
+        font-size: 0.8rem;
+    }
+
+    #activities a span{
+        width: 124px;
+        justify-content: right;
+        font-size: 1rem;
+    }
+}
+
+/* 425px MAX SCREEN **************************************************************************/
+
+/* Header */
+
+@media (max-width: 425px) {
+
+
+}
