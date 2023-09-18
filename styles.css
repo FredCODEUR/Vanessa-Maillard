@@ -119,6 +119,7 @@ button{
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
+    color: rgb(0, 0, 127);
 }
 
 .society{
@@ -171,7 +172,11 @@ button{
     margin-right: 10px;
 }
 
-.selection {
+.specialities :first-child:hover {
+    color: rgb(149, 188, 223);
+}
+
+.specialities :nth-child(2):hover {
     color: rgb(149, 188, 223);
 }
 
