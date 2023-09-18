@@ -1,45 +1,36 @@
 
+var screenWidth = function(){
+    if (window.innerWidth <= 768){
+        console.log(window.innerWidth);
+        return window.innerWidth;
+    }
+}
+
 $(function(){
+    $(".navbar").click(function(){
+        if(window.innerWidth <= 768){
+            $(".line-burger-1").toggleClass("cross-burger-1")
+            ,
+            $(".line-burger-2").toggleClass("cross-burger-2")
+            ,
+            $(".line-burger-3").toggleClass("cross-burger-3")
+            ,
+            $(".dropdown-menu").toggleClass("sidebar")
+        }
+    });
+    $(".navbar").hover(function(){
+        if(window.innerWidth > 768){
+            $(".line-burger-1").toggleClass("cross-burger-1")
+            ,
+            $(".line-burger-2").toggleClass("cross-burger-2")
+            ,
+            $(".line-burger-3").toggleClass("cross-burger-3")
+            ,
+            $(".dropdown-menu").toggleClass("sidebar")
+        }
+    });
+});
 
-    /* HEADER *******************************************************************/
-
-    $("#activities a span").hover(function () {
-        $(this).addClass("selection")
-        }, 
-        function () {
-            $(this).removeClass("selection")
-        }
-    );
-    $("#society").hover(function () {
-        $("#society a span").addClass("selection")
-        ,
-        $("#society img").addClass("selection")
-        }, 
-        function () {
-            $("#society a span").removeClass("selection")
-            ,
-            $("#society img").removeClass("selection")
-        }
-    );
-    $("#menu").hover(function () {
-        $("#title-menu").addClass("selection")
-        ,
-        $("#burger-icon").addClass("selection")
-        ,
-        $(".line-burger").removeClass("line-burger")
-        ,
-        $("#burger-icon span").addClass("burger-selection");
-        }, 
-        function () {
-            $("#title-menu").removeClass("selection")
-            ,
-            $("#burger-icon").removeClass("selection")
-            ,
-            $("#burger-icon span").removeClass("burger-selection")
-            ,
-            $("#burger-icon span").addClass("line-burger");
-        }
-    );
-    
-    /***********************************************************************************/
+$(window).resize(function(){
+    screenWidth();
 });
