@@ -171,6 +171,10 @@ button{
 
 @media only screen and (max-width: 1024px) {
 
+    .society img{
+        width: 49px;
+    }
+/*
     button{
         font-size: 1rem;
     }
@@ -179,9 +183,6 @@ button{
         font-size: 1rem;
     }
 
-    .society img{
-        width: 49px;
-    }
 
     .name h1{
         font-size: 1.5rem;
@@ -194,6 +195,7 @@ button{
     .specialities a{
         font-size: 1rem;
     }
+    */
 }
 
 /* on screen min-width 768px  */
