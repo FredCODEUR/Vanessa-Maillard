@@ -17,7 +17,6 @@
     height: 70px;
     background-color: aliceblue;
     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
-    z-index: 50;
 }
 
 .navbar{
@@ -93,10 +92,9 @@ button{
     left: -250px;
     width: 240px;
     height: 100%;
-    background-color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.9);
     transition: 0.2s;
     border-right: 1px solid rgba(0,0,0,0.2);
-    z-index: 49;
 }
 
 .sidebar{
@@ -246,7 +244,6 @@ button{
 
     .dropdown-menu li{
         padding-left: 25px;
-        height: 30px;
     }
 
     .specialities{
