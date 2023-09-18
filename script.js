@@ -29,17 +29,6 @@ $(function(){
             $(".dropdown-menu").toggleClass("sidebar")
         }
     });
-    $(".society").hover(function(){
-        $(".name h1").toggleClass("selection")
-        ,
-        $(".name h3").toggleClass("selection")
-    });
-    $(".specialities a").hover(function(){
-        $(this).addClass("selection");
-        },
-        function(){
-            $(this).removeClass("selection");
-    });
 });
 
 $(window).resize(function(){

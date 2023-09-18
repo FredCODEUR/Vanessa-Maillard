@@ -48,7 +48,7 @@
     width: 18px;
     height: 3px;
     margin-bottom: 3px;
-    background-color: rgb(0, 0, 238);
+    background-color: rgb(0, 0, 127);
     transition: 0.1s;
 }
 
@@ -75,7 +75,7 @@
 
 button{
     border: none;
-    color: rgb(0, 0, 238);
+    color: rgb(0, 0, 127);
     background-color: aliceblue;
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
@@ -138,11 +138,17 @@ button{
 .name h1{
     font-family: 'Alex Brush', cursive;
     font-size: 1.8rem;
+    color: rgb(0, 0, 127);
 }
 
 .name h3{
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
+    color: rgb(0, 0, 127);
+}
+
+.society:hover .name h1, .society:hover .name h3{
+    color: rgb(149, 188, 223);
 }
 
 .specialities{
@@ -154,6 +160,7 @@ button{
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
+    color: rgb(0, 0, 127);
 }
 
 .specialities :first-child{
@@ -164,7 +171,7 @@ button{
     margin-right: 10px;
 }
 
-.selection{
+.selection {
     color: rgb(149, 188, 223);
 }
 
