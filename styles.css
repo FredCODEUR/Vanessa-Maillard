@@ -163,6 +163,10 @@ button{
     margin-right: 10px;
 }
 
+.selection{
+    color: rgb(149, 188, 223);
+}
+
 /* on screen min-width 1024px  */
 
 @media only screen and (max-width: 1024px) {
