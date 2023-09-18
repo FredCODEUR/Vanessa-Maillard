@@ -127,7 +127,7 @@ button{
 }
 
 .society img{
-    width: 22%;
+    width: 56px;
 }
 
 .name{
@@ -173,6 +173,10 @@ button{
 
     .dropdown-menu li a{
         font-size: 1rem;
+    }
+
+    .society img{
+        width: 49px;
     }
 
     .name h1{
@@ -228,10 +232,6 @@ button{
 
     .name h3{
         font-size: 0.8rem;
-    }
-
-    .society img{
-        width: 22%;
     }
 
     .specialities{
