@@ -1,262 +1,240 @@
-
 *{
     margin: 0;
     padding: 0;
-}
-
-body{
-    font-family: 'Roboto', sans-serif;
-}
-
-ul{
+    text-decoration: none;
     list-style: none;
 }
 
-a{
-    text-decoration: none;
-}
+/* HEADER *******************************************************************/
 
-.selection{
-    color: aliceblue;
-    background-color: rgb(37, 37, 109);
-    transition: 0.8s;
-}
-
-.burger-selection{
-    background-color: rgb(255, 255, 255);
-    transition: 0.8s;
-}
-
-/* HEADER *************************************************************************************/
-
-header{
+.container{
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 70px;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+    z-index: 50;
 }
 
-header .container{
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88px;
+    height: 70px;
+}
+
+.navbar :hover{
+    cursor: pointer;
+}
+
+.burger-icon{
     position: relative;
-    width: 1680px;
-    margin: 0 auto;
-    padding: 0 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header .container a{
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: rgb(37, 37, 109);
-}
-
-/* Menu */
-
-#burger-icon{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 15px;
-    padding: 27.5px 10px;
-    /*border: 1px solid;*/
+    justify-content: center;
+    padding-top: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 18px;
+    height: 18px;
 }
 
-#burger-icon span{
-    width: 20px;
+.burger-icon span{
+    width: 18px;
     height: 3px;
-    border-radius: 3px;
+    margin-bottom: 3px;
+    background-color: #551a8b;
+    transition: 0.1s;
 }
 
-.line-burger{
-    background-color: rgb(37, 37, 109);
+.navbar:hover .burger-icon span{
+    background-color: rgb(149, 188, 223);
 }
 
-#menu{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /*border: 1px solid;*/
-}
-
-#title-menu{
-    display:flex;
-    align-items: center;
-    padding: 0px 10px;
-    height: 70px;
-    font-size: 1.2rem;
-}
-
-#menu nav{
+.cross-burger-1{
     position: absolute;
-    top: 70px;
-    width: 220px;
-    height: auto;
-    background-color:aliceblue;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transform: rotate(45deg);
+    transition: 0.1s;
+}
+
+.cross-burger-2{
     display: none;
+    transition: 0.1s;
 }
 
-#menu nav ul li a{
-    display: block;
-    padding: 12px 16px;
+.cross-burger-3{
+    position: absolute;
+    transform: rotate(-45deg);
+    transition: 0.1s;
 }
 
-#menu:hover nav{
-    display: block;
+button{
+    border: none;
+    color: #551a8b;
+    background-color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-right: 10px;
 }
 
-#menu nav ul li:hover a{
-    display: flex;
-    color: aliceblue;
-    background-color: rgb(37, 37, 109);
+.navbar:hover button{
+    color: rgb(149, 188, 223);
 }
 
-/* Society */
+.dropdown-menu{
+    position: fixed;
+    top: 70px;
+    left: -250px;
+    width: 240px;
+    height: 100%;
+    background-color: aliceblue;
+    transition: 0.2s;
+    border-right: 1px solid rgba(0,0,0,0.2);
+    z-index: 49;
+}
 
-#society{
-    padding: 0 10px;
+.sidebar{
+    left: -10px;
+    transition: 0.2s;
+}
+
+.dropdown-menu li{
     display: flex;
     align-items: center;
-    height: 70px;
-    /*border: 1px solid;*/
+    padding-left: 30px;
+    height: 50px;
 }
 
-#society img{
-height: 70px;
+.dropdown-menu li:hover a{
+    color: rgb(149, 188, 223);
 }
 
-#society a span{
+.dropdown-menu li a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.society{
     display: flex;
     align-items: center;
-    height: 70px;
-    padding: 0 10px;
+}
+
+.society img{
+    width: 22%;
+}
+
+.name{
+    text-align: center;
+}
+
+.name h1{
     font-family: 'Alex Brush', cursive;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 
-/* Activities */
-
-#activities{
-    width: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /*border: 1px solid;*/
-}
-
-#activities a span{
-    height: 70px;
-    padding: 0px 10px;
-    display: flex;
-    align-items: center;
+.name h3{
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
 }
 
-/* MAIN-IMAGE *********************************************************************************/
-
-/* CONSULTATION *******************************************************************************/
-
-/* PROPOSITION ********************************************************************************/
-
-/* CONTACT ************************************************************************************/
-
-/* FOOTER *************************************************************************************/
-
-/* 1024px MAX SCREEN **************************************************************************/
-
-/* Header */
-
-@media (max-width: 1024px) {
-
-
-
-    #activities a:nth-child(2){
-        display: none;
-    }
-
-    #activities{
-        width: 170px;
-        justify-content: right;
-    }
+.specialities{
+    display: flex;
+    justify-content: space-between;
 }
 
-/* 720px MAX SCREEN **************************************************************************/
+.specialities a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 
-/* Header */
+.specialities :first-child{
+    margin-right: 20px;
+}
 
-@media (max-width: 720px) {
+.specialities :nth-child(2){
+    margin-right: 10px;
+}
 
-    #menu a:nth-child(2){
-        display: none;
+/* on screen min-width 1024px  */
+
+@media only screen and (max-width: 1024px) {
+
+    button{
+        font-size: 1rem;
     }
 
-    #society a span{
-        font-size: 2rem;
+    .dropdown-menu li a{
+        font-size: 1rem;
     }
 
-    #society img{
-        height: 50px;
-        padding: 10px 10px;
+    .name h1{
+        font-size: 1.5rem;
     }
 
-    header .container a{
-        font-size: 0.8rem;
+    .name h3{
+        font-size: 1rem;
     }
 
-    #activities a span{
-        
-        justify-content: right;
+    .specialities a{
         font-size: 1rem;
     }
 }
 
-/* 560px MAX SCREEN **************************************************************************/
+/* on screen min-width 768px  */
 
-/* Header */
+@media only screen and (max-width: 768px) {
 
-@media (max-width: 560px) {
-    #society a span{
-        font-size: 1.5rem;
+    .specialities{
+        width: 86px;
     }
 
-    #society img{
-        height: 50px;
-        padding: 10px 10px;
+    .specialities :first-child{
+        display: none;
     }
 
-    header .container a{
-        font-size: 0.8rem;
+    .specialities :nth-child(2){
+        display: none;
     }
 
-    #activities a span{
-        font-size: 0.8rem;
-    }
-
-    #activities{
-        width: auto;
-    }
-
-    #society{
-        width: auto;
-    }
-
-    #society img{
-        height: 36px;
-        padding: 17px 0px;
-    }
-}
-
-/* 450px MAX SCREEN **************************************************************************/
-
-/* Header */
-
-@media (max-width: 450px){
-    #activities{
+    button{
         display: none;
     }
 }
 
+/* on screen min-width 425px  */
+
+@media only screen and (max-width: 425px) {
+
+    .dropdown-menu li{
+        padding-left: 25px;
+        height: 30px;
+    }
+
+    .dropdown-menu li a{
+        font-size: 0.8rem;
+    }
+
+    .name h1{
+        font-size: 1.2rem;
+    }
+
+    .name h3{
+        font-size: 0.8rem;
+    }
+
+    .society img{
+        width: 22%;
+    }
+
+    .specialities{
+        width: 38px;
+    }
+}
