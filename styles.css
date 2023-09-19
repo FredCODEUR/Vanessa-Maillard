@@ -15,7 +15,7 @@
     justify-content: space-between;
     width: 100%;
     height: 70px;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -71,7 +71,7 @@
 button{
     border: none;
     color: rgb(0, 0, 127);
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
@@ -106,6 +106,9 @@ button{
     font-size: 1.2rem;
     font-weight: bold;
     color: rgb(0, 0, 127);
+    display: flex;
+    align-items: center;
+    height: 50px;
 }
 
 .society{
@@ -190,28 +193,6 @@ button{
     .society img{
         width: 49px;
     }
-/*
-    button{
-        font-size: 1rem;
-    }
-
-    .dropdown-menu li a{
-        font-size: 1rem;
-    }
-
-
-    .name h1{
-        font-size: 1.5rem;
-    }
-
-    .name h3{
-        font-size: 1rem;
-    }
-
-    .specialities a{
-        font-size: 1rem;
-    }
-    */
 }
 
 /* on screen min-width 768px  */
@@ -254,24 +235,13 @@ button{
     .specialities{
         display: none;
     }
-/*
-    .dropdown-menu li a{
-        font-size: 0.8rem;
-    }
-
-    .name h1{
-        font-size: 1.2rem;
-    }
-
-    .name h3{
-        font-size: 0.8rem;
-    }
-    */
 }
 
-/* on screen min-width 320px  */
+/* MAIN IMG *******************************************************/
 
-@media only screen and (max-width: 320px) {
-
-
+main img{
+    padding-top: 70px;
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
 }
