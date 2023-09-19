@@ -51,10 +51,6 @@
     transition: 0.1s;
 }
 
-.navbar:hover .burger-icon span{
-    background-color: rgb(149, 188, 223);
-}
-
 .cross-burger-1{
     position: absolute;
     transform: rotate(45deg);
@@ -82,10 +78,6 @@ button{
     padding-right: 10px;
 }
 
-.navbar:hover button{
-    color: rgb(149, 188, 223);
-}
-
 .dropdown-menu{
     position: fixed;
     top: 70px;
@@ -107,10 +99,6 @@ button{
     align-items: center;
     padding-left: 30px;
     height: 50px;
-}
-
-.dropdown-menu li:hover a{
-    color: rgb(149, 188, 223);
 }
 
 .dropdown-menu li a{
@@ -146,10 +134,6 @@ button{
     color: rgb(0, 0, 127);
 }
 
-.society:hover .name h1, .society:hover .name h3{
-    color: rgb(149, 188, 223);
-}
-
 .specialities{
     display: flex;
     justify-content: space-between;
@@ -170,12 +154,33 @@ button{
     margin-right: 10px;
 }
 
-.specialities :first-child:hover {
-    color: rgb(149, 188, 223);
-}
+/* on screen min-width 1024px  */
 
-.specialities :nth-child(2):hover {
-    color: rgb(149, 188, 223);
+@media only screen and (min-width: 1024px) {
+
+    .navbar:hover .burger-icon span{
+        background-color: rgb(149, 188, 223);
+    }
+
+    .navbar:hover button{
+        color: rgb(149, 188, 223);
+    }    
+
+    .dropdown-menu li:hover a{
+        color: rgb(149, 188, 223);
+    }
+
+    .society:hover .name h1, .society:hover .name h3{
+        color: rgb(149, 188, 223);
+    }
+
+    .specialities :first-child:hover {
+        color: rgb(149, 188, 223);
+    }
+    
+    .specialities :nth-child(2):hover {
+        color: rgb(149, 188, 223);
+    }
 }
 
 /* on screen min-width 1024px  */
