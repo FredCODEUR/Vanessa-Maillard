@@ -240,8 +240,9 @@ button{
 /* MAIN IMG *******************************************************/
 
 main img{
+    overflow: hidden;
     padding-top: 70px;
     width: 100vw;
-    height: 40vh;
+    height: 70vh;
     object-fit: cover;
 }
