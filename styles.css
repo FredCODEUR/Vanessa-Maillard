@@ -377,6 +377,12 @@ footer div div h3{
     justify-content: center;
     padding: 0 15px 50px;
 }
+
+#ets img{
+    width: 22%;
+    height: auto;
+}
+
 footer div div{
     display: flex;
     align-items: center;
