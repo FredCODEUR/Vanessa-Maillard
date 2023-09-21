@@ -108,6 +108,7 @@ main{
 button{
     border: none;
     color: rgb(0, 0, 127);
+    background-color: transparent;
     -webkit-tap-highlight-color: transparent;
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
