@@ -5,18 +5,59 @@
     list-style: none;
 }
 
+body{
+    width: 100vw;
+}
+
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 2.5%;  
+}
+
+section h1, h2{
+    text-align: center;
+    margin-bottom: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    padding-top: 100px;
+}
+
+
+section h2{
+    font-size: 22px;
+}
+
+p{
+    text-align: justify;
+    margin-bottom: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* HEADER *******************************************************************/
 
 .container{
     position: fixed;
     top: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 70px;
+    height: 60px;
+    padding: 20px 0;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+    z-index: 50;
 }
 
 .navbar{
@@ -24,7 +65,7 @@
     align-items: center;
     justify-content: center;
     width: 88px;
-    height: 70px;
+    height: 100px;
 }
 
 .navbar :hover{
@@ -80,7 +121,7 @@ button{
 
 .dropdown-menu{
     position: fixed;
-    top: 70px;
+    top: 100px;
     left: -250px;
     width: 240px;
     height: 100%;
@@ -121,17 +162,17 @@ button{
     margin-right: 5px;
 }
 
-.name{
+.society-name{
     text-align: center;
 }
 
-.name h1{
+.society-name h1{
     font-family: 'Alex Brush', cursive;
     font-size: 1.8rem;
     color: rgb(0, 0, 127);
 }
 
-.name h3{
+.society-name h3{
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     color: rgb(0, 0, 127);
@@ -157,6 +198,196 @@ button{
     margin-right: 10px;
 }
 
+/* MAIN IMG *******************************************************/
+
+#main-image{
+    padding-top: 100px;
+    width: 100vw;
+    height: 65vh;
+    object-fit: cover;
+}
+
+/* CONSULTATION *****************************************************************/
+
+
+
+/* Title */
+
+/* Text */
+
+/* Publics */
+
+#publics{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 70px;
+}
+
+#publics img{
+    width: 128px;
+    height: 128px;
+    margin: 15px;
+}
+
+/* PROPOSITION *****************************************************************/
+
+#proposition{
+    background-color: rgb(240, 245, 255);
+}
+
+/* Articles */
+
+.article-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.article{
+    position: relative;
+    width: 480px;
+    height: 480px;
+    overflow: hidden;
+    border-radius: 2rem;
+    border: 1px solid rgb(224, 224, 224);
+    margin: 50px 50px;
+    
+}
+
+.article h2{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 4.3% 0;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.article img{
+    width: 100%;
+}
+
+.article p{
+    text-align: justify;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.85);
+    bottom: 0;
+    padding: 15px 15px 15px 15px;
+    box-sizing: border-box;
+}
+
+.article p a{
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 0.4rem;
+    background-color: rgb(120, 167, 255);
+}
+
+.article p a:hover{
+    border-radius: 0.4rem;
+    color: aliceblue;
+    background-color: rgb(0, 172, 77);
+    transition: 0.1s;
+}
+
+
+/* FIVE-WOUNDS ******************************************************************/
+
+.carrousel{
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.slider{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+    animation: 30s slidy infinite;
+}
+
+.slider img{
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+@keyframes slidy {
+    0%{left: 0%;}
+    20%{left: 0%;}
+    25%{left: -100%;}
+    45%{left: -100%;}
+    50%{left: -200%;}
+    70%{left: -200%;}
+    75%{left: -300%;}
+    95%{left: -300%;}
+    100%{left: -400%;}
+}
+
+/* FOOTER ***********************************************************************/
+
+footer{
+    margin-top: 100px;
+    padding-top: 70px;
+    background-color: rgb(120, 167, 255);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+footer div div h3{
+    font-family: 'Alex Brush', cursive;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+
+#contact{
+    max-width: 700px;
+    margin: 0 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    font-size: 1.2rem;
+}
+
+.copyright{
+    max-width: 700px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    font-size: 1rem;
+}
+
+#copy, #ets, #mail, #phone{
+    width: 262px;
+    justify-content: center;
+    padding: 0 15px 50px;
+}
+footer div div{
+    display: flex;
+    align-items: center;
+}
+
+/* RESPONSIVE *******************************************************************/
+
 /* on screen min-width 1024px  */
 
 @media only screen and (min-width: 1024px) {
@@ -173,7 +404,7 @@ button{
         color: rgb(149, 188, 223);
     }
 
-    .society:hover .name h1, .society:hover .name h3{
+    .society:hover .society-name h1, .society:hover .society-name h3{
         color: rgb(149, 188, 223);
     }
 
@@ -186,7 +417,7 @@ button{
     }
 }
 
-/* on screen min-width 1024px  */
+/* on screen max-width 1024px  */
 
 @media only screen and (max-width: 1024px) {
 
@@ -195,7 +426,7 @@ button{
     }
 }
 
-/* on screen min-width 768px  */
+/* on screen max-width 768px  */
 
 @media only screen and (max-width: 768px) {
 
@@ -222,9 +453,13 @@ button{
     button{
         display: none;
     }
+
+    #main-image{
+        height: 50vh;
+    }
 }
 
-/* on screen min-width 425px  */
+/* on screen max-width 425px  */
 
 @media only screen and (max-width: 425px) {
 
@@ -235,14 +470,8 @@ button{
     .specialities{
         display: none;
     }
-}
 
-/* MAIN IMG *******************************************************/
-
-main img{
-    overflow: hidden;
-    padding-top: 70px;
-    width: 100vw;
-    height: 70vh;
-    object-fit: cover;
+    #main-image{
+        height: 35vh;
+    }
 }
