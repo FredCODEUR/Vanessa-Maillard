@@ -150,6 +150,7 @@ button{
 .society{
     display: flex;
     align-items: center;
+    background-color: white;
 }
 
 .society img{
@@ -183,6 +184,7 @@ button{
     font-size: 1.2rem;
     font-weight: bold;
     color: rgb(0, 0, 127);
+    background-color: white;
 }
 
 .specialities :first-child{
