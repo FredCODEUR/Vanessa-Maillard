@@ -248,10 +248,11 @@ button{
     width: 480px;
     height: 480px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
     border-radius: 2rem;
     border: 1px solid rgb(224, 224, 224);
-    margin: 50px 50px;
-    
+    margin: 25px 25px;
 }
 
 .article h2{
@@ -264,7 +265,8 @@ button{
 }
 
 .article img{
-    width: 100%;
+    width: 480px;
+    height: auto;
 }
 
 .article p{
@@ -426,6 +428,10 @@ footer div div{
     .society img{
         width: 49px;
     }
+
+    .article{
+        margin: 20px 20px;
+    }
 }
 
 /* on screen max-width 768px  */
@@ -459,6 +465,10 @@ footer div div{
     #main-image{
         height: 50vh;
     }
+
+    .article{
+        margin: 10px 10px;
+    }
 }
 
 /* on screen max-width 425px  */
@@ -475,5 +485,9 @@ footer div div{
 
     #main-image{
         height: 35vh;
+    }
+
+    .article{
+        margin: 10px 0px;
     }
 }
