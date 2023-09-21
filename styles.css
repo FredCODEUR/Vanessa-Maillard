@@ -77,6 +77,7 @@ main{
     padding-right: 10px;
     width: 18px;
     height: 18px;
+    background-color: transparent;
 }
 
 .burger-icon span{
@@ -107,7 +108,7 @@ main{
 button{
     border: none;
     color: rgb(0, 0, 127);
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
@@ -142,6 +143,7 @@ button{
     font-size: 1.2rem;
     font-weight: bold;
     color: rgb(0, 0, 127);
+    background-color: transparent;
     display: flex;
     align-items: center;
     height: 50px;
@@ -150,7 +152,7 @@ button{
 .society{
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: transparent;
 }
 
 .society img{
@@ -184,7 +186,7 @@ button{
     font-size: 1.2rem;
     font-weight: bold;
     color: rgb(0, 0, 127);
-    background-color: white;
+    background-color: transparent;
 }
 
 .specialities :first-child{
