@@ -305,37 +305,39 @@ button{
 /* FIVE-WOUNDS ******************************************************************/
 
 .carrousel{
-    width: 80%;
+    width: 90%;
     max-width: 800px;
     overflow: hidden;
 }
 
 .slider{
     position: relative;
-    width: 500%;
+    width: 600%;
     margin: 0;
     padding: 0;
     font-size: 0;
     text-align: left;
-    animation: 30s slidy infinite;
+    animation: 60s slidy infinite;
 }
 
 .slider img{
-    width: 20%;
+    width: 16.6667%;
     height: auto;
     float: left;
 }
 
 @keyframes slidy {
     0%{left: 0%;}
-    20%{left: 0%;}
-    25%{left: -100%;}
-    45%{left: -100%;}
-    50%{left: -200%;}
-    70%{left: -200%;}
-    75%{left: -300%;}
-    95%{left: -300%;}
-    100%{left: -400%;}
+    16%{left: 0%;}
+    20%{left: -100%;}
+    36%{left: -100%;}
+    40%{left: -200%;}
+    56%{left: -200%;}
+    60%{left: -300%;}
+    76%{left: -300%;}
+    80%{left: -400%;}
+    96%{left: -400%;}
+    100%{left: -500%;}
 }
 
 /* FOOTER ***********************************************************************/
@@ -396,6 +398,7 @@ footer div div{
 
 /* RESPONSIVE *******************************************************************/
 
+
 /* on screen min-width 1024px  */
 
 @media only screen and (min-width: 1024px) {
@@ -425,6 +428,26 @@ footer div div{
     }
 }
 
+/* on screen max-width 2382px  */
+
+@media only screen and (max-width: 2382px) {
+
+    .article-container{
+        margin: 0 auto;
+        max-width: 1595px;
+    }
+}
+
+/* on screen max-width 1075px  */
+
+@media only screen and (max-width: 1075px) {
+
+    #publics{
+        margin: 0 auto;
+        max-width: 630px;
+    }
+}
+
 /* on screen max-width 1024px  */
 
 @media only screen and (max-width: 1024px) {
@@ -434,7 +457,7 @@ footer div div{
     }
 
     .article{
-        margin: 20px 20px;
+        margin: 10px 10px;
     }
 }
 
@@ -468,10 +491,6 @@ footer div div{
 
     #main-image{
         height: 50vh;
-    }
-
-    .article{
-        margin: 10px 10px;
     }
 }
 
