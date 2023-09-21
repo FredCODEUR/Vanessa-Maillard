@@ -5,10 +5,6 @@
     list-style: none;
 }
 
-body{
-    width: 100vw;
-}
-
 .wrapper{
     width: 90%;
     margin: 0 auto;
@@ -37,7 +33,6 @@ p{
 }
 
 main{
-    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -342,6 +337,7 @@ button{
 footer{
     margin-top: 100px;
     padding-top: 70px;
+    width: 100%;
     background-color: rgb(120, 167, 255);
 }
 
