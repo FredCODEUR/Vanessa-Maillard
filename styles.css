@@ -85,24 +85,24 @@ main{
     height: 3px;
     margin-bottom: 3px;
     background-color: rgb(0, 0, 127);
-    transition: 0.1s;
+    /*transition: 0.1s;*/
 }
 
 .cross-burger-1{
     position: absolute;
     transform: rotate(45deg);
-    transition: 0.1s;
+    /*transition: 0.1s;*/
 }
 
 .cross-burger-2{
     display: none;
-    transition: 0.1s;
+    /*transition: 0.1s;*/
 }
 
 .cross-burger-3{
     position: absolute;
     transform: rotate(-45deg);
-    transition: 0.1s;
+    /*transition: 0.1s;*/
 }
 
 button{
