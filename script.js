@@ -6,7 +6,13 @@ var screenWidth = function(){
     }
 }
 
+var sidebarIsOpen = false;
+var pos = $('ul').position();
+
 $(function(){
+    
+    console.log(pos.top);
+    console.log(pos.left);
     $(".navbar").click(function(){
         if(window.innerWidth <= 1024){
             $(".line-burger-1").toggleClass("cross-burger-1")
@@ -17,6 +23,9 @@ $(function(){
             ,
             $(".dropdown-menu").toggleClass("sidebar")
         }
+        pos = $('ul').position();
+        console.log(pos.top);
+        console.log(pos.left);
     });
     $(".navbar").hover(function(){
         if(window.innerWidth > 1024){

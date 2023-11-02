@@ -60,6 +60,7 @@ main{
     align-items: center;
     justify-content: center;
     width: 100px;
+    height: 100px;
 }
 
 .navbar :hover{
@@ -75,7 +76,7 @@ main{
     margin-left: 10px;
     margin-right: 10px;
     width: 18px;
-    height: 18px;
+    height: 21px;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -83,6 +84,7 @@ main{
     width: 18px;
     height: 3px;
     margin-bottom: 3px;
+    border-radius: 3px;
     background-color: rgb(0, 0, 127);
     /*transition: 0.1s;*/
 }
