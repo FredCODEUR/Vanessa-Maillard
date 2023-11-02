@@ -73,8 +73,8 @@ main{
     flex-direction: column;
     justify-content: center;
     padding-top: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     width: 18px;
     height: 18px;
     -webkit-tap-highlight-color: transparent;
